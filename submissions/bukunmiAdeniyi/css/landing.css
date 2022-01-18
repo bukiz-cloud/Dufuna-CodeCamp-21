@@ -17,8 +17,9 @@ body{
  
 }
 .sign-up {
+    text-decoration: none;
     width: 80px;
-    height: 30px;
+    height: 40px;
     background: #ffffff;
     border: 1px solid #ad4c4c;
     box-sizing: border-box;
@@ -92,6 +93,12 @@ body{
         border: 1px solid #c4c4c4;
         border-radius: 5px;
     }
+
+::placeholder{
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
 .food-menu-list {
     margin-top: 40px;
     

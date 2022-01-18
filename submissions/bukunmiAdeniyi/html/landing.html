@@ -22,9 +22,10 @@
                 <li class="headers-list">
                     Login
                 </li>
-                <div class="headers-list">
-                    <button class="Sign-up"> Sign</button>
-                </div>
+            
+                <li class="Sign-up"><a href="">Sign up</a>
+                </li>
+                
             </ul>
 
         </div>
@@ -40,22 +41,23 @@
 </header>
     <!-- The select page -->
     <section id="Selection-container">
-        <h3>Where are you:</h3>
-        <select list="area-list" name="area" id="area" class="address-container" placeholder="Enter your delivery address">
-            <option value="">
+        <label for="arealist" >Where are you?:</label><br><br>
+        <input list="area-list" name="area" id="area" class="address-container"  placeholder="Enter your delivery address">
+        <datalist>
+            <datalist  id="area-list" class="address-container">
+                <option value="Gbagada">
+                <option value="lekki">
+                <option value="Victoria Island">
+                <option value="Surulere">
+                <option value="Ogba">
+                <option value="Ikeja">
+                <option value="Oshodi">
+                <option value="Abule-Egba">
+                <option value="Agege">
+            </datalist>
 
-            </option>
-            <option value="Gbagada">Gbagada </option>   
-            <option value="lekki">Lekki</option>
-            <option value="Victoria Island">Victoria Island</option>
-            <option value="Surulere">Surulere</option>
-            <option value="Ogba">Ogba</option>
-            <option value="Ikeja">Ikeja</option>
-            <option value="Oshodi">Oshodi</option>
-            <option value="Abule-Egba">Abule Abule-Egba</option>
-            <option value="Agege">Agege</option>
-
-        </select>
+        </datalist>
+      
     </section>
     <div class="food-menu-list">
         
