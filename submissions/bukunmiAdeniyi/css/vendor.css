@@ -164,8 +164,7 @@ body {font-family: Poppins;
        width: 100%;
        flex-direction: row;
        padding-bottom: 5px;
-       padding-top: 0.6px;
-       
+       padding-top: 0.6px;  
         
    }
    .vendor-all p {
@@ -189,6 +188,7 @@ body {font-family: Poppins;
        margin: 1px;
        align-content: center;
    }
+
    .food-name {
        display: flex;
        justify-content: flex-start;
@@ -202,8 +202,6 @@ body {font-family: Poppins;
        align-items: center;
        color: #4e4d4d;
    }
-
-
 
    .food-price{
     width: 100%;
