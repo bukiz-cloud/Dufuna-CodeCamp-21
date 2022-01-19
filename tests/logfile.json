@@ -33,8 +33,8 @@
           "file": "\\landing_page.js",
           "beforeHooks": [
             {
-              "title": "\"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"before all\" hook: setupWebdriver in \"Testing Scholars Project\"",
+              "title": "\"before all\" hook: setupWebdriver in \"Printing product price\"",
+              "fullTitle": "Printing product price \"before all\" hook: setupWebdriver in \"Printing product price\"",
               "timedOut": false,
               "duration": 8800,
               "state": null,
@@ -43,7 +43,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
+              "code": "const file_url = `file://${file_path}`;\ndriver.get(file_url).then(done);",
               "err": {},
               "uuid": "a340f00e-bc43-4a99-8b11-0c6c23d8c91d",
               "parentUUID": "ae1275c4-ebe5-4276-a6a4-31dc4024b4ea",
@@ -53,10 +53,10 @@
           ],
           "afterHooks": [
             {
-              "title": "\"after all\" hook in \"Testing Scholars Project\"",
-              "fullTitle": "Testing Scholars Project \"after all\" hook in \"Testing Scholars Project\"",
+              "title": "\"after all\" hook in \"Printing product price\"",
+              "fullTitle": "Printing product price \"after all\" hook in \"Printing product price\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
           ],
           "tests": [
             {
-              "title": "test case: FoodBag Logo is present",
-              "fullTitle": "Testing Scholars Project test case: FoodBag Logo is present",
+              "title": "test case: check product details",
+              "fullTitle": "Printing product price test case: check product details",
               "timedOut": false,
               "duration": 114,
               "state": "passed",
@@ -101,7 +101,7 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const name = await driver.findElement(By.css(\"body\"));\nconst text = await name.getText();\nassert.include(text, \"Bag\", `Ensure \"food bag\" text is present on header`);",
+              "code": "const element = await driver.findElement(By.css(\"body\"));\nconst text = await element.getText();\nassert.include(\n  text,\n  \"is sold for\",\n  \"Ensure you print out the value in the right format\"\n);",
               "err": {},
               "uuid": "bbc4c70d-4e58-4628-bbdc-04dd2b19ca37",
               "parentUUID": "ae1275c4-ebe5-4276-a6a4-31dc4024b4ea",
@@ -109,8 +109,8 @@
               "skipped": false
             },
             {
-              "title": "test case: FoodBag text is present on the page",
-              "fullTitle": "Testing Scholars Project test case: FoodBag text is present on the page",
+              "title": "test case: check three arrays are present",
+              "fullTitle": "Printing product price test case: check three arrays are present",
               "timedOut": false,
               "duration": 48,
               "state": "passed",
@@ -418,7 +418,6 @@
             "0330c52d-5dd3-4d1b-8f9c-3d6ca2a2a1c3",
             "cdf579a2-0022-4ae6-8205-b0d5c79a426f"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 820,
